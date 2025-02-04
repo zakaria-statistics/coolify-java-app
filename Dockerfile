@@ -21,10 +21,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Step 8: Copy the JAR file from the build image to the runtime image
-COPY --from=build /app/target/*.jar /app/spring-boot-hello-world-1.0.0-SNAPSHOT.jar
+COPY --from=build /app/target/*.jar /app/coolify.jar
 
 # Step 9: Expose port 8081 for the application
 EXPOSE 8087
 
 # Step 10: Run the Spring Boot application
-ENTRYPOINT ["java", "-jar", "/app/spring-boot-hello-world-1.0.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/coolify.jar"]
