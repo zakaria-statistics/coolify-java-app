@@ -24,7 +24,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar /app/coolify.jar
 
 # Step 9: Expose port 8081 for the application
-EXPOSE 8081
+EXPOSE 8087
 
 # Step 10: Run the Spring Boot application
 ENTRYPOINT ["java", "-jar", "/app/coolify.jar"]
