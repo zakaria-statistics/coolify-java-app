@@ -20,6 +20,6 @@ public class CoolifyApplication {
 class HelloController {
     @GetMapping
     public String sayHello() {
-        return "Hello, Yassine big man!!!!";
+        return "Hello, Yassine big boss";
     }
 }
